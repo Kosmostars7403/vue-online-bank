@@ -5,7 +5,8 @@ import Home from '../views/Home.vue'
 const routes = [
   {path: '/', component: Home, name: 'Home', meta: {layout: 'main', auth: true}},
   {path: '/help', component: () => import('../views/Help.vue'), name: 'Help', meta: {layout: 'main', auth: true}},
-  {path: '/auth', component: () => import('../views/Auth.vue'), name: 'Help', meta: {layout: 'auth', auth: false}},
+  {path: '/request/:id', component: () => import('../views/Request.vue'), name: 'Request', meta: {layout: 'main', auth: true}},
+  {path: '/auth', component: () => import('../views/Auth.vue'), name: 'Auth', meta: {layout: 'auth', auth: false}},
 ]
 
 const router = createRouter({
