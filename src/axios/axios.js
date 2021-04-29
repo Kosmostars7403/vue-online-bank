@@ -7,7 +7,7 @@ const requestAxios = axios.create({
 
 requestAxios.interceptors.response.use(null, error => {
   if (error.response.status == 401) {
-    router.push('/modules?message=modules')
+    router.push('/auth?message=auth')
   }
 
   return Promise.reject(error)

@@ -5,7 +5,8 @@ import request from './modules/request.module'
 export default createStore({
   state() {
     return {
-      errorMessage: null
+      errorMessage: null,
+      sidebar: false
     }
   },
   mutations: {
@@ -14,6 +15,12 @@ export default createStore({
     },
     clearErrorMessage(state) {
       state.errorMessage = null
+    },
+    openSideBar(state) {
+      state.sidebar = true
+    },
+    closeSideBar(state) {
+      state.sidebar = false
     }
   },
   actions: {

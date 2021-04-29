@@ -26,9 +26,9 @@ export function useLoginForm() {
       .min(6, 'Password min length is 6!')
   )
 
-  const onSubmit = handleSubmit(values => {
+  const onSubmit = handleSubmit(async values => {
     try {
-      store.dispatch('auth/login', values)
+      await store.dispatch('auth/login', values)
       router.push('/')
     } catch (e) {
 

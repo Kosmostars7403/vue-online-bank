@@ -1,13 +1,14 @@
 <template>
+  <app-page back title="Help">
 
+  </app-page>
 </template>
 
 <script>
+import AppPage from '../components/ui/AppPage'
+
 export default {
-name: "Help.vue"
+  components: {AppPage}
 }
 </script>
 
-<style scoped>
-
-</style>
