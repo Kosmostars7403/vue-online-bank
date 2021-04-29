@@ -1,4 +1,7 @@
-# vue-practice-app
+# vue-online-bank
+
+This project was created for educational purposes. [demo](https://angular-blog-fe2ec.web.app/auth?message=auth)
+
 
 ## Project setup
 ```
